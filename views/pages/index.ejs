@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Log in</title>
+		<% include ../partials/head %>
+	</head>
+	<body>
+		<header><% include ../partials/header %></header>
+		<div id="page_content" class="container">
+            <% include ../partials/msg %>
+             <form action="/users/login" class="form-signin" method="post">
+                <fieldset><legend class="alert alert-info">Log in</legend>
+                <label for="inputUsername" class="sr-only">User name</label>
+                <input name="username" type="text" id="inputUsername" class="form-control" placeholder="User name" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input name="remember" type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-success btn-block" type="submit">Log in</button>
+            </form>
+            <p><b>Don't have an account yet? <a href="/users/signup">Register instead</a></b></p>
+        </div>
+		
+	</body>
+</html>
+

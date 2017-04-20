@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Account</title>
+		<% include ../partials/head %>
+	</head>
+	<body>
+		<header><% include ../partials/header %></header>
+		<div id="page_content" class="template">
+        <% include ../partials/msg %>
+        </div>
+        <div class="container">
+                <hr/>
+            <!--<p> You are currently logged in as <b><-%= user.username %></b></p><p>User created on <span id="date"><-%= user.date %></span>.</p><!-->
+                <p><a href="/users/logout">Log out</a></p>
+        </div> <!-- /container -->
+    </body>
+</html>
+
